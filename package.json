@@ -7,9 +7,14 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/core": "^7.4.0",
+    "babel-cli": "^6.26.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --plugins @babel/plugin-transform-react-jsx server.jsx"
   },
   "repository": {
     "type": "git",
