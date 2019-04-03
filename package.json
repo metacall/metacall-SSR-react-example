@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel --plugins @babel/plugin-transform-react-jsx server.jsx >> server.js",
+    "build": "babel server.jsx --out-file server.js --plugins @babel/plugin-transform-react-jsx",
     "xd": "babel --version"
   },
   "repository": {
